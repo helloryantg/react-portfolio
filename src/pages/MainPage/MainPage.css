@@ -1,0 +1,8 @@
+.MainPage {
+    height: 80%;
+    width: 80%;
+    border-radius: 10px;
+    -webkit-box-shadow: 30px 20px 54px -10px rgba(0,0,0,0.79);
+    -moz-box-shadow: 30px 20px 54px -10px rgba(0,0,0,0.79);
+    box-shadow: 30px 20px 54px -10px rgba(0,0,0,0.79);
+}
