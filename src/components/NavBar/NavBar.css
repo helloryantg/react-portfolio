@@ -1,3 +1,12 @@
 .NavBar {
-    height: 60px;
+    text-align: right;
+    margin: 54px 30px;
+    margin-right: 30px;
+}
+
+.NavBar a {
+    text-decoration: none;
+    color: black;
+    margin: 0 18px;
+    font-weight: 600;
 }

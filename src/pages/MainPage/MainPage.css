@@ -1,3 +1,9 @@
 .MainPage {
-    
+    margin: 100px 100px 0;
+    text-align: left;
+}
+
+.MainPage .name, .MainPage .job-location {
+    font-size: 60px;
+    font-weight: 500;
 }

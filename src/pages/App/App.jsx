@@ -10,7 +10,7 @@ class App extends Component {
   
   render() {
     return (
-      <div className="App flexed_column centered aligned">
+      <div className="App">
         <MainPage />
       </div>
     );
