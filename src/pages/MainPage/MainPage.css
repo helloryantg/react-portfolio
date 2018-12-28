@@ -1,9 +1,35 @@
 .MainPage {
-    margin: 100px 100px 0;
+    margin: 100px 100px 200px;
     text-align: left;
 }
 
 .MainPage .name, .MainPage .job-location {
     font-size: 60px;
     font-weight: 500;
+}
+
+.MainPage .name {
+    margin-top: 200px;
+}
+
+.MainPage .job-location {
+    margin-bottom: 200px;
+}
+
+.MainPage .project-name {
+    font-size: 32px;
+    font-weight: 600;
+    margin-top: 22px;
+    margin-bottom: 15px;
+}
+
+.MainPage .project-description {
+    margin-bottom: 17px;
+    color: #B2B2B2;
+    font-size: 20px;
+    width: 474px;
+}
+
+.MainPage .project-links {
+    display: flex;
 }

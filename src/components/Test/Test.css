@@ -1,0 +1,12 @@
+.Test {
+    height: 50px;
+    width: 180px;
+    margin-right: 16px;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+

@@ -1,0 +1,11 @@
+.Project {
+    height: 550px;
+    width: 630px;
+    margin-bottom: 130px;
+}
+
+.Project .project-image {
+    height: 365px;
+    width: 630px;
+    background-color: #FFD991;
+}
