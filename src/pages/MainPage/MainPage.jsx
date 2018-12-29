@@ -18,6 +18,7 @@ class MainPage extends Component {
                     color="#FFD991"
                     heroku="https://dashboard.heroku.com/apps/complete-me-multiplayer"
                     github="https://github.com/helloryantg/complete-me"
+                    technologies="React Node.js Express Socket.io HTML5 CSS JavaScript API JWT Bcrypt MongoDB Mongoose mLab"
                 />
                 <Project 
                     name="Fizz Quiz"

@@ -1,11 +1,11 @@
 .MainPage {
-    margin: 100px 100px 200px;
-    text-align: left;
+    width: 100%;
+    padding: 0 10px;
 }
 
 .MainPage .name, .MainPage .job-location {
-    font-size: 60px;
-    font-weight: 500;
+    font-size: 30px;
+    font-weight: 700;
 }
 
 .MainPage .name {
@@ -13,11 +13,11 @@
 }
 
 .MainPage .job-location {
-    margin-bottom: 200px;
+    margin-bottom: 100px;
 }
 
 .MainPage .project-name {
-    font-size: 32px;
+    font-size: 26px;
     font-weight: 600;
     margin-top: 22px;
     margin-bottom: 15px;
@@ -26,8 +26,8 @@
 .MainPage .project-description {
     margin-bottom: 17px;
     color: #B2B2B2;
-    font-size: 20px;
-    width: 474px;
+    font-size: 18px;
+    width: 100%;
 }
 
 .MainPage .project-links {
@@ -36,4 +36,31 @@
 
 .MainPage .footer {
     font-weight: 600;
+    margin-bottom: 20px;
+}
+
+
+@media (min-width: 900px) {
+    .MainPage {
+        text-align: left;
+        padding: 20px 100px;
+    }
+
+    .MainPage .name, .MainPage .job-location {
+        font-size: 60px;
+        font-weight: 500;
+    }
+
+    .MainPage .job-location {
+        margin-bottom: 200px;
+    }
+
+    .MainPage .project-name {
+        font-size: 32px;
+    }
+
+    .MainPage .project-description {
+        font-size: 20px;
+        width: 474px;
+    }
 }
