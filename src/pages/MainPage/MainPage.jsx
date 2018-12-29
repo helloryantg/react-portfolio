@@ -4,7 +4,46 @@ import NavBar from '../../components/NavBar/NavBar';
 import Project from '../../components/Project/Project';
 
 class MainPage extends Component {
+    constructor (props) {
+        super(props);
+        this.state = {
+            hover: null
+        };
+    }
+
+    onMouseEnterHandler = (projectNumber) => {
+        this.setState({
+            hover: projectNumber
+        });
+    }
+
+    onMouseLeaveHandler = () => {
+        this.setState({
+            hover: null
+        });
+    }
+    
     render() {
+        const completeMeTech = [
+            'React', 'Node.js', 'Express', 'Socket.io', 
+            'HTML5', 'CSS', 'JavaScript', 'API', 'JWT', 
+            'Bcrypt', 'MongoDB', 'Mongoose'
+        ];
+        
+        const fizzQuizTech = [
+            'Express', 'Node.js', 'MongoDB', 'JavaScript',
+            'OAuth', 'API', 'HTML', 'CSS'
+        ];
+
+        const likeTech = [
+            'Python', 'Django', 'Boto3', 'AWS', 'SQLite3',
+            'HTML', 'CSS'
+        ];
+
+        const blackjackTech = [
+            'JavaScript', 'HTML', 'CSS'
+        ];
+
         return (
             <div className="MainPage">
                 <NavBar />
@@ -18,7 +57,11 @@ class MainPage extends Component {
                     color="#FFD991"
                     heroku="https://dashboard.heroku.com/apps/complete-me-multiplayer"
                     github="https://github.com/helloryantg/complete-me"
-                    technologies="React Node.js Express Socket.io HTML5 CSS JavaScript API JWT Bcrypt MongoDB Mongoose mLab"
+                    technologies={completeMeTech}
+                    onMouseEnterHandler={this.onMouseEnterHandler}
+                    onMouseLeaveHandler={this.onMouseLeaveHandler}
+                    hover={this.state.hover}
+                    projectNumber="1"
                 />
                 <Project 
                     name="Fizz Quiz"
@@ -26,6 +69,12 @@ class MainPage extends Component {
                     color="#FFAF91"
                     heroku="https://fizzquizz.herokuapp.com/"
                     github="https://github.com/helloryantg/fizz-quiz"
+                    technologies={fizzQuizTech}
+                    onMouseEnterHandler={this.onMouseEnterHandler}
+                    onMouseLeaveHandler={this.onMouseLeaveHandler}
+                    hover={this.state.hover}
+                    projectNumber="2"
+
                 />
 
                 <Project 
@@ -34,6 +83,11 @@ class MainPage extends Component {
                     color="#91BBFF"
                     heroku="https://salty-sea-47975.herokuapp.com/"
                     github="https://github.com/helloryantg/photo_contest"
+                    technologies={likeTech}
+                    onMouseEnterHandler={this.onMouseEnterHandler}
+                    onMouseLeaveHandler={this.onMouseLeaveHandler}
+                    hover={this.state.hover}
+                    projectNumber="3"
                 />
 
                 <Project 
@@ -42,6 +96,11 @@ class MainPage extends Component {
                     color="#568418"
                     heroku="https://helloryantg.github.io/blackjack-game/"
                     github="https://github.com/helloryantg/blackjack-game"
+                    technologies={blackjackTech}
+                    onMouseEnterHandler={this.onMouseEnterHandler}
+                    onMouseLeaveHandler={this.onMouseLeaveHandler}
+                    hover={this.state.hover}
+                    projectNumber="4"
                 />
 
                 <div className="footer">Ryan Gonzales - 2019</div>

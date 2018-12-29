@@ -8,6 +8,37 @@
     width: 100%;
 }
 
+.Project .project-technologies {
+    background-color: rgba(0, 0, 0, 0.8);
+    height: 100%;
+    width: 100%;
+    color: white;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 30px;
+}
+
+.Project .technologies-container {
+    width: 100%;
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.Project .technologies-each {
+    list-style: none;
+    font-size: 20px;
+    line-height: 26px;
+}
+
+.Project #made-with {
+    font-size: 16px;
+}
+
 @media (min-width: 900px) {
     .Project {
         height: 550px;
@@ -18,5 +49,9 @@
     .Project .project-image {
         height: 365px;
         width: 630px;
+    }
+
+    .Project .project-technologies {
+        padding: 90px;
     }
 }
