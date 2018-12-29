@@ -1,9 +1,9 @@
 import React from 'react';
 import './Test.css'
 
-const Test = () => {
+const Test = (props) => {
     return (
-        <a href="/">
+        <a target="_blank" rel="noopener noreferrer" href={props.heroku}>
             <div className="Test">Test it!</div>
         </a>
     );

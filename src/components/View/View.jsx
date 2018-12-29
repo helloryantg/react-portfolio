@@ -1,9 +1,9 @@
 import React from 'react';
 import './View.css';
 
-const View = () => {
+const View = (props) => {
     return (
-        <a href="/">
+        <a target="_blank" rel="noopener noreferrer" href={props.github}>
             <div className="View">View GitHub</div>
         </a>
     );
