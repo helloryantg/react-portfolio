@@ -51,6 +51,8 @@ class MainPage extends Component {
                 <div className="name">Ryan Gonzales</div>
                 <div className="job-location">-Developer // Los Angeles</div>
 
+                <div className="project">Projects</div>   
+
                 <Project 
                     name="Complete Me!"
                     description="Complete me is a 2-player word completion game using Socket.io for real-time play."

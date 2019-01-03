@@ -1,12 +1,35 @@
 .Test {
-    height: 50px;
-    width: 180px;
-    margin-right: 16px;
+    height: 5rem;
+    width: 18rem;
+    margin-right: 1.6rem;
     background-color: black;
     color: white;
-    font-size: 20px;
+    font-size: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    transition: white 0.25 ease;
 }
 
+.Test:hover {
+    /* color: black; */
+}
+
+.Test::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: none;
+    /* color: black; */
+    transform-origin: left;
+    transition: 0.25s ease;
+    z-index: -1;
+}
+
+.Test:hover::after {
+    width: 100%;
+}

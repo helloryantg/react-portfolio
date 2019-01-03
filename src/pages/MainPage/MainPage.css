@@ -1,32 +1,72 @@
 .MainPage {
     width: 100%;
-    padding: 0 10px;
+    padding: 0 1rem;
+    font-size: 1.6rem;
 }
 
 .MainPage .name, .MainPage .job-location {
-    font-size: 30px;
+    font-size: 3rem;
     font-weight: 700;
 }
 
 .MainPage .name {
-    margin-top: 100px;
+    margin-top: 10rem;
+    animation-name: moveInLeft;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+}
+
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-10rem);
+    }
+
+    80% {
+        transform: translateX(1rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
 }
 
 .MainPage .job-location {
-    margin-bottom: 100px;
+    margin-bottom: 10rem;
+    animation-name: moveInRight;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+
+}
+
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(30rem);
+    }
+
+    80% {
+        transform: translateX(-1rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
 }
 
 .MainPage .project-name {
-    font-size: 26px;
+    font-size: 2.6rem;
     font-weight: 600;
-    margin-top: 22px;
-    margin-bottom: 15px;
+    margin-top: 2.2rem;
+    margin-bottom: 1.5rem;
 }
 
 .MainPage .project-description {
-    margin-bottom: 17px;
+    margin-bottom: 1.7rem;
     color: #B2B2B2;
-    font-size: 18px;
+    font-size: 1.8rem;
     width: 100%;
 }
 
@@ -36,31 +76,47 @@
 
 .MainPage .footer {
     font-weight: 600;
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
+    margin-top: 20rem;
+}
+
+.MainPage .project {
+    display: none;
 }
 
 
 @media (min-width: 900px) {
+    .MainPage .project {
+        display: block;
+        font-size: 20rem;
+        position: fixed;
+        bottom: 18rem;
+        left: 40%;
+        font-weight: 700;
+        opacity: 0.1;
+        z-index: -1;
+    }
+
     .MainPage {
         text-align: left;
-        padding: 20px 100px;
+        padding: 2rem 10rem;
     }
 
     .MainPage .name, .MainPage .job-location {
-        font-size: 60px;
+        font-size: 6rem;
         font-weight: 700;
     }
 
     .MainPage .job-location {
-        margin-bottom: 200px;
+        margin-bottom: 20rem;
     }
 
     .MainPage .project-name {
-        font-size: 32px;
+        font-size: 3.2rem;
     }
 
     .MainPage .project-description {
-        font-size: 20px;
-        width: 474px;
+        font-size: 2rem;
+        width: 47.4rem;
     }
 }
