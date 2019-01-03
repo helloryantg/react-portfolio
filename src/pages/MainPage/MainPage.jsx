@@ -57,7 +57,7 @@ class MainPage extends Component {
                     name="Complete Me!"
                     description="Complete me is a 2-player word completion game using Socket.io for real-time play."
                     color="#FFD991"
-                    heroku="https://dashboard.heroku.com/apps/complete-me-multiplayer"
+                    heroku="https://complete-me-multiplayer.herokuapp.com/"
                     github="https://github.com/helloryantg/complete-me"
                     technologies={completeMeTech}
                     onMouseEnterHandler={this.onMouseEnterHandler}
