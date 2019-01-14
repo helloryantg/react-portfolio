@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './MainPage.css';
 import NavBar from '../../components/NavBar/NavBar';
 import Project from '../../components/Project/Project';
+import blackjackVideo from '../../videos/blackjack-video.mp4';
 
 class MainPage extends Component {
     constructor (props) {
@@ -76,7 +77,6 @@ class MainPage extends Component {
                     onMouseLeaveHandler={this.onMouseLeaveHandler}
                     hover={this.state.hover}
                     projectNumber="2"
-
                 />
 
                 <Project 
@@ -103,6 +103,7 @@ class MainPage extends Component {
                     onMouseLeaveHandler={this.onMouseLeaveHandler}
                     hover={this.state.hover}
                     projectNumber="4"
+                    video={blackjackVideo}
                 />
 
                 <div className="footer">Ryan Gonzales - 2019</div>

@@ -12,8 +12,14 @@
     transition: white 0.25 ease;
 }
 
+.Test:link,
+.Test:visited {
+    transition: all .2s;
+}
+
 .Test:hover {
-    /* color: black; */
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .2);
 }
 
 .Test::after {

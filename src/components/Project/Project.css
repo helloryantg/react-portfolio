@@ -7,13 +7,30 @@
     height: 36.5rem;
     width: 100%;
     opacity: 1;
-    transition: opacity .25s ease-in-out;
-    -moz-transition: opacity .25s ease-in-out;
-    -webkit-transition: opacity .25s ease-in-out;
+    transition: all 1s;
+    -moz-transition: all 1s;
+    -webkit-transition: all 1s;
+    position: relative;
+    overflow: hidden;
+}
+
+.Project .project-video {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
 }
  
 .Project .project-image:hover {
-    opacity: 0.8;
+    opacity: .8;
+}
+
+.Project .project-video:hover {
+    opacity: .2;
 }
 
 .Project .project-technologies {
