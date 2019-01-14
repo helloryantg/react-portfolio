@@ -22,6 +22,7 @@ const Project = (props) => {
                 type="video/mp4"
                 autoPlay
                 loop
+                muted
             ></video>   
             {props.hover === props.projectNumber ? 
                 <div className="project-technologies">

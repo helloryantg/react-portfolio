@@ -12,21 +12,17 @@
     -webkit-transition: all 1s;
     position: relative;
     overflow: hidden;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, .15);
 }
 
 .Project .project-video {
     position: absolute;
     left: 0;
     width: 100%;
-    height: auto;
     background-size: cover;
     top: 50%;
     transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
-}
- 
-.Project .project-image:hover {
-    opacity: .8;
 }
 
 .Project .project-video:hover {

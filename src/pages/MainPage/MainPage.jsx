@@ -3,6 +3,9 @@ import './MainPage.css';
 import NavBar from '../../components/NavBar/NavBar';
 import Project from '../../components/Project/Project';
 import blackjackVideo from '../../videos/blackjack-video.mp4';
+import photoContestVideo from '../../videos/photo-contest.mp4';
+import fizzQuizVideo from '../../videos/fizz-quiz.mp4';
+import completeMeVideo from '../../videos/complete-me.mp4';
 
 class MainPage extends Component {
     constructor (props) {
@@ -65,6 +68,7 @@ class MainPage extends Component {
                     onMouseLeaveHandler={this.onMouseLeaveHandler}
                     hover={this.state.hover}
                     projectNumber="1"
+                    video={completeMeVideo}
                 />
                 <Project 
                     name="Fizz Quiz"
@@ -77,6 +81,7 @@ class MainPage extends Component {
                     onMouseLeaveHandler={this.onMouseLeaveHandler}
                     hover={this.state.hover}
                     projectNumber="2"
+                    video={fizzQuizVideo}
                 />
 
                 <Project 
@@ -90,6 +95,7 @@ class MainPage extends Component {
                     onMouseLeaveHandler={this.onMouseLeaveHandler}
                     hover={this.state.hover}
                     projectNumber="3"
+                    video={photoContestVideo}
                 />
 
                 <Project 
