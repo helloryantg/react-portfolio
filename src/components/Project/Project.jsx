@@ -12,7 +12,7 @@ const Project = (props) => {
     return (
         <div className="Project">
             <div className="project-image" 
-                // style={projectColor}
+                // style={projectColor}n
                 onMouseEnter={() => props.onMouseEnterHandler(props.projectNumber)}
                 onMouseLeave={props.onMouseLeaveHandler}
             >

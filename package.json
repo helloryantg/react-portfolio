@@ -1,7 +1,7 @@
 {
-  "homepage": "https://www.ryangonz.com/react-portfolio",
   "name": "react-portfolio",
   "version": "0.1.0",
+  "homepage": "https://helloryantg.github.io/react-portfolio",
   "private": true,
   "dependencies": {
     "gsap": "^2.0.2",
@@ -21,7 +21,7 @@
     "extends": "react-app"
   },
   "browserslist": [
-    ">0.2%",
+    ">0.2%", 
     "not dead",
     "not ie <= 11",
     "not op_mini all"
