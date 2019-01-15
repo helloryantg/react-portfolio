@@ -20,19 +20,19 @@ self.__precacheManifest = [
     "url": "www.ryangonz.com/static/js/runtime~main.536949c0.js"
   },
   {
-    "revision": "afef1ac2258a56f39121",
-    "url": "www.ryangonz.com/static/js/main.afef1ac2.chunk.js"
+    "revision": "e253b27526ebbb360017",
+    "url": "www.ryangonz.com/static/js/main.e253b275.chunk.js"
   },
   {
-    "revision": "de030d7c0d1c065beea9",
-    "url": "www.ryangonz.com/static/js/1.de030d7c.chunk.js"
+    "revision": "cf682183aabe8c84fdc1",
+    "url": "www.ryangonz.com/static/js/1.cf682183.chunk.js"
   },
   {
-    "revision": "afef1ac2258a56f39121",
-    "url": "www.ryangonz.com/static/css/main.a1e9aed0.chunk.css"
+    "revision": "e253b27526ebbb360017",
+    "url": "www.ryangonz.com/static/css/main.26f6c021.chunk.css"
   },
   {
-    "revision": "f45f5af22119ac33d993100913256ab7",
+    "revision": "311f26f40dad98b8829d7f40876458f1",
     "url": "www.ryangonz.com/index.html"
   }
 ];
