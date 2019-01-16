@@ -5,14 +5,14 @@ import View from '../View/View';
 
 const Project = (props) => {
 
-    // const projectColor = {
-    //     backgroundColor: props.color
-    // }
+    const projectColor = {
+        backgroundColor: props.color
+    }
 
     return (
         <div className="Project">
             <div className="project-image" 
-                // style={projectColor}n
+                style={projectColor}
                 onMouseEnter={() => props.onMouseEnterHandler(props.projectNumber)}
                 onMouseLeave={props.onMouseLeaveHandler}
             >
