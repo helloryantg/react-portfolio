@@ -26,7 +26,7 @@ class MainPage extends Component {
             hover: null
         });
     }
-    
+
     render() {
         const completeMeTech = [
             'React', 'Node.js', 'Express', 'Socket.io', 

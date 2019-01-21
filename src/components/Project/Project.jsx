@@ -4,7 +4,6 @@ import Test from '../Test/Test';
 import View from '../View/View';
 
 const Project = (props) => {
-
     const projectColor = {
         backgroundColor: props.color
     }

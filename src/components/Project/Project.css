@@ -12,7 +12,8 @@
     -webkit-transition: all 1s;
     position: relative;
     overflow: hidden;
-    box-shadow: 0 15px 40px rgba(0, 0, 0, .15);
+    box-shadow: 14px 14px 30px rgba(0, 0, 0, .4);
+    border-radius: 8px;
 }
 
 .Project .project-video {
@@ -54,6 +55,10 @@
     list-style: none;
     font-size: 2rem;
     line-height: 2.6rem;
+}
+
+.Project .project-name {
+    margin-top: 4rem;
 }
 
 .Project #made-with {

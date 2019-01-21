@@ -10,6 +10,9 @@
     background: none;
     position: relative;
     transition: 0.25 ease;
+    /* box-shadow: 10px 10px 30px rgba(0, 0, 0, .4); */
+    border-radius: 8px;
+    overflow: hidden;
 }
 
 .View:hover {
