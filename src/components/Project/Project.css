@@ -1,6 +1,7 @@
 .Project {
     width: 100%;
     margin-bottom: 8rem;
+    height: auto;
 }
 
 .Project .project-image {

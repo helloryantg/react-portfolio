@@ -69,7 +69,7 @@ class MainPage extends Component {
                     hover={this.state.hover}
                     projectNumber="1"
                     video={completeMeVideo}
-                />
+                /> 
                 <Project 
                     name="Fizz Quiz"
                     description='Fizz-Quiz is a "hot potato", trivia-based, drinking game. Play with friends while answering trivia questions as you beat the clock!'
