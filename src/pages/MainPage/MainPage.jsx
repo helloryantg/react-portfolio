@@ -7,6 +7,26 @@ import photoContestVideo from '../../videos/photo-contest.mp4';
 import fizzQuizVideo from '../../videos/fizz-quiz.mp4';
 import completeMeVideo from '../../videos/complete-me.mp4';
 
+const completeMeTech = [
+    'React', 'Node.js', 'Express', 'Socket.io', 
+    'HTML5', 'CSS', 'JavaScript', 'API', 'JWT', 
+    'Bcrypt', 'MongoDB', 'Mongoose'
+];
+
+const fizzQuizTech = [
+    'Express', 'Node.js', 'MongoDB', 'JavaScript',
+    'OAuth', 'API', 'HTML', 'CSS'
+];
+
+const likeTech = [
+    'Python', 'Django', 'Boto3', 'AWS', 'SQLite3',
+    'HTML', 'CSS'
+];
+
+const blackjackTech = [
+    'JavaScript', 'HTML', 'CSS'
+];
+
 class MainPage extends Component {
     constructor (props) {
         super(props);
@@ -28,32 +48,12 @@ class MainPage extends Component {
     }
 
     render() {
-        const completeMeTech = [
-            'React', 'Node.js', 'Express', 'Socket.io', 
-            'HTML5', 'CSS', 'JavaScript', 'API', 'JWT', 
-            'Bcrypt', 'MongoDB', 'Mongoose'
-        ];
-        
-        const fizzQuizTech = [
-            'Express', 'Node.js', 'MongoDB', 'JavaScript',
-            'OAuth', 'API', 'HTML', 'CSS'
-        ];
-
-        const likeTech = [
-            'Python', 'Django', 'Boto3', 'AWS', 'SQLite3',
-            'HTML', 'CSS'
-        ];
-
-        const blackjackTech = [
-            'JavaScript', 'HTML', 'CSS'
-        ];
-
         return (
             <div className="MainPage">
                 <NavBar />
 
                 <div className="name">Ryan Gonzales</div>
-                <div className="job-location">-Developer // Los Angeles</div>
+                <div className="job-location">Full-Stack Developer // Los Angeles</div>
 
                 <div className="project">Projects</div>   
 

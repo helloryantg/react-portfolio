@@ -1,7 +1,7 @@
 .NavBar {
     width: 100%;
     margin: 4rem auto;
-    text-align: center;
+    text-align: right;
     font-size: 1.6rem;
 }
 
@@ -10,11 +10,17 @@
     color: black;
     margin: 0 1.8rem;
     font-weight: 600;
+    padding: 0 1rem;
+}
+
+.NavBar a:hover {
+    border-bottom: 3px solid black;
+    padding-bottom: 10px;
+    transition: all .3s;
 }
 
 @media (min-width: 900px) {
     .NavBar {
-        text-align: right;
         margin: 5.4rem 3rem;
         margin-right: 3rem;    
     }  

@@ -28,6 +28,7 @@
 
 .Project .project-video:hover {
     opacity: .2;
+    transition: all .8s;
 }
 
 .Project .project-technologies {
