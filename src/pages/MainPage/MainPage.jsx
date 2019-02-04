@@ -55,11 +55,13 @@ class MainPage extends Component {
                 <div className="name">Ryan Gonzales</div>
                 <div className="job-location">Full-Stack Developer // Los Angeles</div>
 
+                {/* <div className="my-description">Hi. I'm Ryan. I'm a Full-Stack Developer working in React, Node.js, Express,</div> */}
+
                 <div className="project">Projects</div>   
 
                 <Project 
                     name="Complete Me!"
-                    description="Complete me is a 2-player word completion game using Socket.io for real-time play."
+                    description="Complete me is a 2-player, real-time, competitive, word completion game using Socket.io. I used React.js for the frontend, Node.js/Express.js for the backend, and MongoDB for the database. For authorization, I used Bcrypt and JWT (Jason Web Tokens). "
                     color="#FFD991"
                     heroku="https://complete-me-multiplayer.herokuapp.com/"
                     github="https://github.com/helloryantg/complete-me"
@@ -72,7 +74,7 @@ class MainPage extends Component {
                 /> 
                 <Project 
                     name="Fizz Quiz"
-                    description='Fizz-Quiz is a "hot potato", trivia-based, drinking game. Play with friends while answering trivia questions as you beat the clock!'
+                    description='Fizz-Quiz is a "hot potato", trivia-based, drinking game. Play with friends while answering trivia questions as you beat the clock! This is a mobile-friendly game that uses a Trivia API using Node.js, Express.js, JavaScript, and MongoDB. During this group project, my responsibilities include the GitHub manager and API manager.'
                     color="#FFAF91"
                     heroku="https://fizzquizz.herokuapp.com/"
                     github="https://github.com/helloryantg/fizz-quiz"
@@ -86,7 +88,7 @@ class MainPage extends Component {
 
                 <Project 
                     name="Like."
-                    description="Like. is a photography contest website where users can share their photographs and vote their most favorite per category."
+                    description="Like. is a photography contest website where users can share their photographs and vote their most favorite per category. This app was developed using Python and Django using Boto3 and AWS for storing photos."
                     color="#91BBFF"
                     heroku="https://salty-sea-47975.herokuapp.com/"
                     github="https://github.com/helloryantg/photo_contest"

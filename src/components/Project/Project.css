@@ -1,7 +1,6 @@
 .Project {
     width: 100%;
     margin-bottom: 8rem;
-    height: auto;
 }
 
 .Project .project-image {
@@ -13,8 +12,8 @@
     -webkit-transition: all 1s;
     position: relative;
     overflow: hidden;
-    box-shadow: 14px 14px 30px rgba(0, 0, 0, .4);
-    border-radius: 8px;
+    box-shadow: 14px 14px 30px rgba(0, 0, 0, .2);
+    /* border-radius: 8px; */
 }
 
 .Project .project-video {
@@ -67,6 +66,10 @@
     font-size: 1.6rem;
 }
 
+.Project .project-description {
+    width: 100%;
+}
+
 @media (min-width: 900px) {
     .Project {
         height: 55rem;
@@ -77,6 +80,8 @@
     .Project .project-image {
         height: 36.5rem;
         width: 63rem;
+        /* width: 120%; */
+        /* height: 84%; */
     }
 
     .Project .project-technologies {
