@@ -61,7 +61,7 @@ class MainPage extends Component {
 
                 <Project 
                     name="Complete Me!"
-                    description="Complete me is a 2-player, real-time, competitive, word completion game using Socket.io. I used React.js for the frontend, Node.js/Express.js for the backend, and MongoDB for the database. For authorization, I used Bcrypt and JWT (Jason Web Tokens). "
+                    description="Complete me is a 2-player, real-time, competitive, word completion game using Socket.io. I used React.js for the frontend, Node.js/Express.js for the backend, and MongoDB for the database. For authorization, I used Bcrypt and JWT (JSON Web Tokens). "
                     color="#FFD991"
                     heroku="https://complete-me-multiplayer.herokuapp.com/"
                     github="https://github.com/helloryantg/complete-me"
