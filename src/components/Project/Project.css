@@ -70,21 +70,25 @@
     width: 100%;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 1000px) {
     .Project {
         height: 55rem;
         width: 63rem;
         margin-bottom: 13rem;
+        text-align: center;
     }
 
     .Project .project-image {
-        height: 36.5rem;
-        width: 63rem;
-        /* width: 120%; */
-        /* height: 84%; */
+        margin-top: 22rem;
+        height: 43.5rem;
+        width: 80rem;
     }
 
     .Project .project-technologies {
         padding: 9rem;
+    }
+    
+    .Project .project-name, .Project .project-description {
+        text-align: left;
     }
 }
