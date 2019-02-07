@@ -11,7 +11,7 @@ const Project = (props) => {
     return (
         <div className="Project">
             <div className="project-image" 
-                style={projectColor}
+                style={(props.video) ? null: projectColor}
                 onMouseEnter={() => props.onMouseEnterHandler(props.projectNumber)}
                 onMouseLeave={props.onMouseLeaveHandler}
             >

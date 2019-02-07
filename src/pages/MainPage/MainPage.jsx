@@ -6,6 +6,7 @@ import blackjackVideo from '../../videos/blackjack-video.mp4';
 import photoContestVideo from '../../videos/photo-contest.mp4';
 import fizzQuizVideo from '../../videos/fizz-quiz.mp4';
 import completeMeVideo from '../../videos/complete-me.mp4';
+import AboutMe from '../../components/AboutMe/AboutMe';
 
 const completeMeTech = [
     'React', 'Node.js', 'Express', 'Socket.io', 
@@ -55,7 +56,7 @@ class MainPage extends Component {
                 <div className="name">Ryan Gonzales</div>
                 <div className="job-location">Full-Stack Developer // Los Angeles</div>
 
-                {/* <div className="my-description">Hi. I'm Ryan. I'm a Full-Stack Developer working in React, Node.js, Express,</div> */}
+                <AboutMe />
 
                 <div className="project">Projects</div>   
 

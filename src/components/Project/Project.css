@@ -12,11 +12,11 @@
     -webkit-transition: all 1s;
     position: relative;
     overflow: hidden;
-    box-shadow: 14px 14px 30px rgba(0, 0, 0, .2);
     /* border-radius: 8px; */
 }
 
 .Project .project-video {
+    box-shadow: 14px 14px 30px rgba(0, 0, 0, .2);
     position: absolute;
     left: 0;
     width: 100%;
@@ -78,7 +78,7 @@
         text-align: center;
     }
 
-    .Project .project-image {
+    .Project .project-image:not(:first-child) {
         margin-top: 22rem;
         height: 43.5rem;
         width: 80rem;
@@ -86,6 +86,7 @@
 
     .Project .project-technologies {
         padding: 9rem;
+        height: 100%;
     }
     
     .Project .project-name, .Project .project-description {

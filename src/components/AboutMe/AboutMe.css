@@ -1,0 +1,30 @@
+.AboutMe {
+    width: 100%;
+    margin-bottom: 8rem;
+    font-size: 1.6rem;
+    padding: 0 2rem;
+}
+
+.AboutMe h2 {
+    font-size: 10rem;
+}
+
+.AboutMe h2,
+.AboutMe h3 {
+    line-height: 3rem;
+}
+
+.AboutMe h3 {
+    color: #B2B2B2;
+}
+
+@media (min-width: 1000px) {
+    .AboutMe {
+        font-size: 2rem;
+    }
+    
+    .AboutMe h2,
+    .AboutMe h3 {
+        line-height: 4.6rem;
+    }
+}

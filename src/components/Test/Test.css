@@ -1,6 +1,6 @@
 .Test {
     height: 5rem;
-    width: 18rem;
+    width: 14rem;
     margin-right: 1.6rem;
     background-color: black;
     color: white;
@@ -40,4 +40,11 @@
 
 .Test:hover::after {
     width: 100%;
+}
+
+@media (min-width: 440px) {
+    .Test {
+        height: 5rem;
+        width: 18rem;
+    }
 }
