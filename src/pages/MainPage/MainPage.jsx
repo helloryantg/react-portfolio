@@ -7,31 +7,46 @@ import photoContestVideo from '../../videos/photo-contest.mp4';
 import fizzQuizVideo from '../../videos/fizz-quiz.mp4';
 import completeMeVideo from '../../videos/complete-me.mp4';
 import AboutMe from '../../components/AboutMe/AboutMe';
+import styled from 'styled-components'
 
-const completeMeTech = [
-    'React', 'Node.js', 'Express', 'Socket.io', 
-    'HTML5', 'CSS', 'JavaScript', 'API', 'JWT', 
-    'Bcrypt', 'MongoDB', 'Mongoose'
-];
+const SideBarContainer = styled.div`
+    height: 100vh;
+    width: 80%;
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    top: 50rem;
+`
 
-const fizzQuizTech = [
-    'Express', 'Node.js', 'MongoDB', 'JavaScript',
-    'OAuth', 'API', 'HTML', 'CSS'
-];
-
-const likeTech = [
-    'Python', 'Django', 'Boto3', 'AWS', 'SQLite3',
-    'HTML', 'CSS'
-];
-
-const blackjackTech = [
-    'JavaScript', 'HTML', 'CSS'
-];
+const SideBar = styled.div`
+    height: 100%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+`
 
 class MainPage extends Component {
     
     state = {
-        hover: null
+        hover: null,
+        completeMeTech: [
+            'React', 'Node.js', 'Express', 'Socket.io', 
+            'HTML5', 'CSS', 'JavaScript', 'API', 'JWT', 
+            'Bcrypt', 'MongoDB', 'Mongoose'
+        ],
+        fizzQuizTech: [
+            'Express', 'Node.js', 'MongoDB', 'JavaScript',
+            'OAuth', 'API', 'HTML', 'CSS'
+        ],
+        likeTech: [
+            'Python', 'Django', 'Boto3', 'AWS', 'SQLite3',
+            'HTML', 'CSS'
+        ],
+        blackjackTech: [
+            'JavaScript', 'HTML', 'CSS'
+        ]
     }
 
     onMouseEnterHandler = projectNumber => {
@@ -48,11 +63,32 @@ class MainPage extends Component {
 
     render() {
 
-        const { hover } = this.state
+        const { 
+            hover,
+            completeMeTech,
+            fizzQuizTech,
+            likeTech,
+            blackjackTech
+         } = this.state
+
+        const combined = [
+            ...completeMeTech,
+            ...fizzQuizTech,
+            ...likeTech,
+            ...blackjackTech
+        ]
+
+        console.log(combined)
 
         return (
             <div className="MainPage">
                 <NavBar />
+
+                <SideBarContainer>
+                    <SideBar>
+                        {combined.map(each => <div>each</div>)}
+                    </SideBar>
+                </SideBarContainer>
 
                 <div className="name">Ryan Gonzales</div>
                 <div className="job-location">Full-Stack Developer // Los Angeles</div>
