@@ -29,26 +29,27 @@ const blackjackTech = [
 ];
 
 class MainPage extends Component {
-    constructor (props) {
-        super(props);
-        this.state = {
-            hover: null
-        };
+    
+    state = {
+        hover: null
     }
 
-    onMouseEnterHandler = (projectNumber) => {
-        this.setState({
+    onMouseEnterHandler = projectNumber => {
+        this.setState(() => ({
             hover: projectNumber
-        });
+        }))
     }
 
     onMouseLeaveHandler = () => {
-        this.setState({
+        this.setState(() => ({
             hover: null
-        });
+        }))
     }
 
     render() {
+
+        const { hover } = this.state
+
         return (
             <div className="MainPage">
                 <NavBar />
@@ -69,7 +70,7 @@ class MainPage extends Component {
                     technologies={completeMeTech}
                     onMouseEnterHandler={this.onMouseEnterHandler}
                     onMouseLeaveHandler={this.onMouseLeaveHandler}
-                    hover={this.state.hover}
+                    hover={hover}
                     projectNumber="1"
                     video={completeMeVideo}
                 /> 
@@ -82,7 +83,7 @@ class MainPage extends Component {
                     technologies={fizzQuizTech}
                     onMouseEnterHandler={this.onMouseEnterHandler}
                     onMouseLeaveHandler={this.onMouseLeaveHandler}
-                    hover={this.state.hover}
+                    hover={hover}
                     projectNumber="2"
                     video={fizzQuizVideo}
                 />
@@ -96,7 +97,7 @@ class MainPage extends Component {
                     technologies={likeTech}
                     onMouseEnterHandler={this.onMouseEnterHandler}
                     onMouseLeaveHandler={this.onMouseLeaveHandler}
-                    hover={this.state.hover}
+                    hover={hover}
                     projectNumber="3"
                     video={photoContestVideo}
                 />
@@ -110,7 +111,7 @@ class MainPage extends Component {
                     technologies={blackjackTech}
                     onMouseEnterHandler={this.onMouseEnterHandler}
                     onMouseLeaveHandler={this.onMouseLeaveHandler}
-                    hover={this.state.hover}
+                    hover={hover}
                     projectNumber="4"
                     video={blackjackVideo}
                 />
